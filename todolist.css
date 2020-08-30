@@ -1,6 +1,4 @@
-.anime{
-	position: relative;
-}
+
 @keyframes clouds{
 	from{transform: translateX(-100px)}
 	to{transform: translateX(1400px)}
@@ -10,35 +8,45 @@
 img:nth-of-type(1){
 	position: absolute;
 	left:0 ;
-	top: -100px;
+	top: 100px;
 	animation: clouds 7s infinite linear;
 }
 
 img:nth-of-type(2){
 	position: absolute;
 	left: 0px;
-	top: -100px;
-	animation: clouds 10s infinite linear;
+	top: 300px;
+	animation: clouds 7s infinite linear;
 }
 img:nth-of-type(3){
 	position: absolute;
 	left: 0px;
-	top: -250px;
-	animation: clouds 20s infinite linear;
+	top: 200px;
+	animation: clouds 10s infinite linear;
 }
 
 img:nth-of-type(4){
 	position: absolute;
 	left: 0;
-	top: -200px;
+	top: 100px;
+	animation: clouds 20s infinite linear;
+}
+img:nth-of-type(5){
+	position: absolute;
+	left:0 ;
+	top: 0px;
 	animation: clouds 14s infinite linear;
 }
 
+
 .container{
 	background: #f7f7f7;
-	width: 360px;
-	margin: 250px auto;
+	width: 30%;
 	box-shadow: 0 0 5px rgba(0,0,0,0.1);
+	height: 100%;
+	position: absolute;
+	top: 200px;
+	left: 35%;
 }
 
 li:hover span {
@@ -107,6 +115,10 @@ body {
 	background: -webkit-linear-gradient(to right, #f2fcfe, #1c92d2);  /* Chrome 10-25, Safari 5.1-6 */
 	background: linear-gradient(to right, #f2fcfe, #1c92d2); /* W3C, IE 10+/ Edge, Firefox 16+, Chrome 26+, Opera 12+, Safari 7+ */
 	font-weight: normal;
+}
+
+.flex{
+	position: relative;
 }
 #input {
 	font-size: 18px;
